@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../IMG/laud.img.jpg">
+    <link rel="stylesheet" href="../CSS/style.tecnico.css">
+    <title>Laud Sistemy - Técnicos</title>
+</head>
+<body>
+    <header>
+        <h1>Técnicos</h1>
+        <img src="../IMG/laud.img.jpg" alt="laud">
+    <nav>
+        <ul>
+        <li><a href="index.Main.html">Pagina Inicial</a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+    </nav>
+    </header>
+    <main>
+        <div class="card">
+          <h2>Gerar Tabelas Técnicas</h2>
+          <form>
+              <button type="button" onclick="generateTable()">Criar Tabela</button>
+          </form>
+
+          <table id="dynamic-table">
+             <thead>
+                <tr id="table-header">
+                    <th>Campo</th>
+                    <th>Valor</th>
+                </tr>
+             </thead>
+             <tbody></tbody>
+          </table>
+        </div>
+        <div class="card">
+          <h2>Gerar Laudo</h2>
+          <button onclick="generateReport()">Gerar Laudo</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Laud Sistemy. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="../JS/Tecnicos.js"></script>
+</body>
+</html>

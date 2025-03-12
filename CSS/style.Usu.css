@@ -1,0 +1,156 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da Página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* Mantém centralização vertical */
+    flex-direction: column;
+}
+
+/* Estrutura Principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Cartões (Cadastro e Login) */
+.card {
+    background-color: white;
+    width: 100%;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 25px;
+    color: black;
+    font-size: 2rem;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+form label {
+    font-weight: 600;
+    color: #333;
+}
+
+form input, form select {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Botões */
+button {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: black;
+    color: rgb(62, 212, 62);
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+}
+
+/* Estilização do Cabeçalho */
+header {
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+    color: rgb(62, 212, 62);
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid rgb(62, 212, 62);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    color: rgb(62, 212, 62);
+    background-color: #000;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Ajusta o Espaçamento do Main para Não Cobrir o Footer */
+main {
+    margin-bottom: 100px;  
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .card h2 {
+        font-size: 1.5rem;
+    }
+}

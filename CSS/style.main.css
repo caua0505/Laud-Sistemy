@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #333;
+}
+header {
+    background-color: #000;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+ }
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+img{
+    border-radius: 50%;
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 2px solid rgb(62, 212, 62);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+.card {
+    background-color: #000;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: rgb(62, 212, 62);
+    font-family: serif;
+}
+.card p{
+    color: rgb(62, 212, 62);
+    font-family: serif;
+}
+.card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.card button:hover {
+    background-color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: rgb(62, 212, 62);
+}

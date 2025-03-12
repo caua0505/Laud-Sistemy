@@ -1,0 +1,68 @@
+/* Reset para garantir um layout limpo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral para o laudo */
+.laudo {
+  font-family: Arial, sans-serif;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Estilo para o cabeçalho */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 2em;
+}
+
+.header p {
+  font-size: 1.2em;
+}
+
+/* Estilo para as seções */
+.section {
+  margin-bottom: 20px;
+}
+
+/* Flexbox para separar as colunas */
+.coluna {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.coluna h2, .coluna h3 {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.coluna p {
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+/* Estilo para a aprovação */
+.approval label {
+  margin-right: 20px;
+}
+
+/* Estilo para o rodapé */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Linha de separação */
+hr {
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 20px 0;
+}
